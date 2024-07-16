@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="Masukkan Dua Angka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/angka_pertama"
+        android:hint="Masukkan Angka Pertama"
+        android:textSize="14sp"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="16dp"
+        android:minHeight="48dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/angka_kedua"
+        android:hint="Masukkan Angka Kedua"
+        android:textSize="14sp"
+        android:layout_below="@+id/angka_pertama"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="16dp"
+        android:minHeight="48dp"/>
+
+    <Button
+        android:id="@+id/tambah"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/angka_kedua"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="22dp"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/kurang"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tambah"
+        android:layout_alignBottom="@+id/tambah"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/tambah"
+        android:layout_toRightOf="@+id/tambah"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/kali"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/kurang"
+        android:layout_alignBottom="@+id/kurang"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toEndOf="@+id/kurang"
+        android:layout_toRightOf="@+id/kurang"
+        android:text="X" />
+
+    <Button
+        android:id="@+id/bagi"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/kali"
+        android:layout_alignEnd="@+id/bersihkan"
+        android:layout_alignBottom="@+id/kali"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toEndOf="@+id/kali"
+        android:layout_toRightOf="@+id/kali"
+        android:text="/" />
+
+    <Button
+        android:text="Bersihkan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bersihkan"
+        android:layout_below="@+id/tambah"
+        android:layout_marginTop="18dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:text="Hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/bersihkan"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:text="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hasil"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"/>
+</RelativeLayout>
